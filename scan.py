@@ -42,7 +42,7 @@ def vul_scan(target_url):
     try:
         cmd = ["python", "sqlmap.py", "-u", target_url, "--batch"]
         # 把下面路径换成你电脑sqlmap文件夹路径
-        subprocess.run(cmd, cwd=r"D:\sqlmap1.1.5")
+        subprocess.run(cmd, cwd=r"D:\sqlmap")
     except Exception:
         print("未找到Sqlmap，请检查路径配置")
 
